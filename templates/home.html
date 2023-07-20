@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where is the ISS?</title>
+    <link rel="stylesheet" type="text/css" href='../static/styles.css'>
+</head>
+<body>
+    <!--Create top bar for our title-->
+    <div class="top-bar">
+        <h1>Where is the ISS?</h1>
+    </div>
+
+    <!--Give exact position/speed/and other good info-->
+    <div class="info" style="margin-top: 9%; margin-left: 15%;">
+        <form id="dataForm">
+            <h2><u>Info</u></h2>
+            <label for="latitude">LATITUDE: {{ latitude }}&deg;<br><br></label>
+            <label for="longitude">LONGITUDE: {{ longitude }}&deg;<br><br></label>
+            <label for="altitude">ALTITUDE: {{ altitude }} KM<br><br></label>
+            <label for="velocity">VELOCITY: {{ velocity }} KM/HR<br></label>
+        </form>
+    </div>
+
+    <!--Give names of astronauts on board-->
+    <div class="astronauts" style="margin-top: 24%; margin-left: 15%;">
+        <h2><u>Astronauts On Board</u></h2>
+        {% for i in people%}
+        <label>{{ i }}<br></label>
+        {% endfor %}
+    </div>
+
+    <!--Google Map-->
+    <div class="map" style="margin-top: 7%; height: 100px;">
+        <iframe src= "{{ url_for('static', filename='map.html') }}" height="780" width="950"></iframe>
+    </div>
+
+</body>
+</html>
