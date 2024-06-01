@@ -1,5 +1,5 @@
 # ISS-Tracking-Website
-Website that tracks the location and astronauts aboard the Internation Space Station in real time.
+Website that tracks the location and astronauts aboard the International Space Station in real time.
 
 :artificial_satellite:[Check it out here!](https://iss-tracker-flask-bbcd96dc91a3.herokuapp.com/)
 
