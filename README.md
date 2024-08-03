@@ -1,7 +1,7 @@
 # ISS-Tracking-Website
 Website that tracks the location and astronauts aboard the International Space Station in real time.
 
-:artificial_satellite:[Check it out here!](https://iss-tracker-flask-bbcd96dc91a3.herokuapp.com/)
+:artificial_satellite:[Check it out here!](https://iss-tracker-flask-bbcd96dc91a3.herokuapp.com/) NOT CURRENTLY HOSTED DUE TO COST OF HOSTING
 
 # About
 This program was written in python, HTML, and CSS, and built using the Flask framework.  Flask is a popular web application framework written in python.
